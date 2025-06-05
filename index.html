@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Wallet </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#one">Home</a></li>
+                <li>Contact</li>
+                <li> <a href="#trans">Transactions </a></li>
+                <li> <a href="#dash">Dashboard</a></li>
+                <li>Log In</li>
+                <li class="Sign">Sign Up</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="one" >
+        <div class="text">
+            <h1>Want To Be Financially <i style="color: rgb(144, 198, 108);">Stable?</i></h1>
+            <h2> Start Tracking Your Expenses Now!</h2>
+            <p>Track expenses, manage budgets, and gain insights into your spending habits with our powerful and intuitive expense tracking application.</p>
+        </div>
+        <div class="btn">
+            <button>
+                Start Tracking Now
+            </button>
+        </div>
+    </section>
+    <section class="dashboard" id="dash">
+        <div class="head">
+           <h1>Your Dashboard</h1>
+        </div>
+        <div class="tray">
+            <div class="item Balance">
+                <div >
+                    <h3>Total Balance</h3>
+                    <img src="wallet.svg" alt="" class="invert" width="15px" height="15px">
+                </div>
+                <div>0</div>
+            </div><div class="item Income">
+                <div >
+                    <h3>Total Income</h3>
+                    <img src="up.svg" alt=""  width="15px" height="15px">
+                </div>
+                <div>0</div>
+            </div>
+            <div class="item Expense">
+                <div >
+                    <h3>Total Expense</h3>
+                    <img src="down.svg" alt=""  width="15px" height="15px">
+                </div>
+                <div>0</div>
+            </div>
+            <div class="item Track">
+                <div >
+                    <h3>No. of Transactions till now</h3>
+                    <img src="t.svg" alt="" width="15px" height="15px">
+                </div>
+                <div>0</div>
+            </div>
+        </div>
+        <div class="cont">
+        <div class="chart">
+            <canvas id="bar"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="doughnut"></canvas>
+        </div>
+        </div>
+    </section>
+    <section id="trans">
+        <div class="model"></div>
+        <div class="h2">
+            <div>
+            <h2>Transactions</h2>
+            <h4>manage your expense and Income</h4>
+            </div>
+            <button id="addt">Add Transactions</button>
+        </div>
+        <div class="container">
+            <div class="thead">
+                All Transactions
+            </div>
+            <div class="shell">
+                <div>
+                    <h3>Salary</h3>
+                    <h6>Company  - 31/06/25</h6>
+                </div>
+                <div class="det">
+                    <div>$80K</div>
+                    <img src="edit.svg" alt="">
+                    <img src="del.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
