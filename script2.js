@@ -6,7 +6,7 @@ let totaltrans=0;
 async function add() {
     totaltrans++;
     let detail = prompt("Income/expense ?")?.toLowerCase() || "";
-    let cat = prompt(`Enter the source of your ${edetail}`) || "";
+    let cat = prompt("Enter the category it falls into") || "";
     let rs = parseFloat(prompt("Enter the amount you earned/spent")) || 0;
 
     let div = document.createElement("div");
@@ -60,7 +60,7 @@ function edit(div) {
     updateTotals(-oldAmount, oldType);
 
     let edetail = prompt("Income/expense ?")?.toLowerCase() || "";
-    let ecat = prompt(`What is the source of your ${edetail}`) || "";
+    let ecat = prompt("Enter the category it falls into") || "";
     let ers = parseFloat(prompt("Enter the amount you earned/spent")) || 0;
 
     div.dataset.amount = ers;
